@@ -1,0 +1,112 @@
+button.notification {
+  position: fixed;
+  top: 2.5vh;
+  right: -50vw;
+  z-index: 999;
+  appearance: none;
+  border: unset;
+  outline: unset;
+  box-shadow: unset;
+  border-image: unset;
+  box-sizing: unset;
+  transition: right .3s ease;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+
+  &.active {
+    right: 2.5vw;
+  }
+
+  &.top_left {
+    right: unset;
+    left: -50vw;
+    transition: left .3s ease;
+
+    &.active {
+      left: 2.5vw;
+      right: unset;
+    }
+  }
+
+  &.top_center {
+    right: unset;
+    left: 50%;
+    top: -50vh;
+    transform: translateX(-50%);
+    transition: top .3s ease;
+
+    &.active {
+      top: 2.5vh;
+      right: unset;
+    }
+  }
+
+  &.bottom_left {
+    right: unset;
+    bottom: 2.5vh;
+    top: unset;
+    left: -50vw;
+    transition: left .3s ease;
+
+    &.active {
+      left: 2.5vw;
+      right: unset;
+    }
+  }
+
+  &.bottom_center {
+    right: unset;
+    left: 50%;
+    top: unset;
+    bottom: -50vh;
+    transform: translateX(-50%);
+    transition: bottom .3s ease;
+
+    &.active {
+      top: unset;
+      bottom: 2.5vh;
+      right: unset;
+    }
+  }
+
+  &.bottom_right {
+    top: unset;
+    bottom: 2.5vh;
+  }
+
+  >img {
+    max-width: 50px;
+  }
+
+  >div {
+    text-align: left;
+
+    >* {
+      margin: 0;
+    }
+  }
+
+  >button {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    border: none;
+    outline: unset;
+    color: black;
+    background: transparent;
+
+    &:hover {
+      cursor: pointer;
+      color: #333;
+    }
+
+    &:after {
+      content: ' \2573';
+    }
+  }
+}
