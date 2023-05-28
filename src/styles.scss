@@ -79,6 +79,44 @@ button.notification {
     bottom: 2.5vh;
   }
 
+  @media screen and (max-width: 768px) {
+    top: 0;
+    right: -150vw;
+    width: calc(100vw - 24px);
+    border-radius: unset;
+    justify-content: start;
+
+    &.active {
+      right: 0;
+    }
+
+    &.top_left {
+      left: -150vw;
+
+      &.active {
+        left: 0;
+      }
+    }
+
+    &.top_center.active {
+      top: 0;
+    }
+
+    &.bottom_left {
+      left: -150vw;
+      bottom: 0;
+
+      &.active {
+        left: 0;
+      }
+    }
+
+    &.bottom_center.active,
+    &.bottom_right {
+      bottom: 0;
+    }
+  }
+
   >img {
     max-width: 50px;
   }
