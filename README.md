@@ -2,6 +2,8 @@
 
 Simple React notification component.
 
+Check out demo <a href="https://www.balzac.dev/reactComponentNotification/">here</a>
+
 ## Installation
 
 ```bash
