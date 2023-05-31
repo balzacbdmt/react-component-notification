@@ -1,10 +1,10 @@
 {
   "name": "react-component-notification",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple notification component",
   "author": "Balzac Baudemont",
   "license": "Apache-2.0",
-  "repository": "balzac_bdmt/react-component-notification",
+  "repository": "balzacbdmt/react-component-notification",
   "main": "dist/index.js",
   "engines": {
     "node": ">=8",
